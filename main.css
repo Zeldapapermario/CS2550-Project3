@@ -34,9 +34,10 @@ main {
 }
 
 .nav {
-    background-color: lightgray;
+    background-color: #FFB0B0;
     height: 100px;
     justify-content: space-between;
+    margin: 10px;
 } 
 
 .navbar {
@@ -62,13 +63,13 @@ main {
 }
 
 .menu a {
-    color: green;
+    color: #112A46;
     font-weight: bold;
     text-decoration: none;
 }
 
 .menu a:hover {
-    color: red;
+    color: #FFF7D1;
 }
 
 .header {
@@ -84,11 +85,36 @@ main {
 
 h1 {
     font-size: 2rem;
+    color: #112A46;
 }
 
 h2 {
     font-size: 1.5rem;
+    color: #112A46;;
 }
+
+figcaption {
+    font-size: 1.5rem;
+    color: #112A46;;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #112A46;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    padding: 20px;
+}
+
+
 
 /* .logo {
     border-radius: 25px;
@@ -109,14 +135,15 @@ h2 {
  
  #grid-container > div {
     text-align: center;
-    background: lightgreen;
-    border: 3px solid green;
-    padding: 20px;
+    background: #FFD09B;
+/*     border: 3px solid green; */
+    padding: 10px;
+    margin: 10px;
+    padding-top: 20px;
  }
 
  nav {
     grid-area: nav;
-    background-color: pink;
  }
 
  header {
@@ -124,17 +151,18 @@ h2 {
  }
 
  article {
-    background-color: green;
     grid-area: article;
  }
  
  aside {
-    background-color: red;
+    background-color: #FFECC8;
     grid-area: aside;
+    margin: 10px;
  }
 
  footer {
-    background-color: yellow;
+    margin: 10px;
+    background-color: #FFB0B0;
     grid-area: footer;
     display: flex;
     justify-content: space-between;
@@ -162,6 +190,24 @@ h2 {
         grid-template-areas: 
             "nav nav nav"
             "header header header"
+            "article article article"
+            "aside aside aside"
+            "footer footer footer";
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+     }
+}
+
+
+ @media only screen and (min-width: 1300px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            "nav nav nav"
+            "header header header"
             "article article aside"
             "footer footer footer";
     }
@@ -171,3 +217,4 @@ h2 {
         grid-template-columns: auto auto;
      }
 }
+

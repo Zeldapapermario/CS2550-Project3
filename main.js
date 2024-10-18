@@ -1,7 +1,7 @@
 
 // I know this is a super dumb and ineffecient way of showing/hiding the sections but at least it's working
 function showSection(sectionName) {
-    var homeContent, albumContent, artistContent;
+    var homeContent, albumContent, artistContent, asideContent;
     homeContent = document.getElementsByClassName("home_page");
     albumContent = document.getElementsByClassName("album_page");
     artistContent = document.getElementsByClassName("artist_page");
