@@ -1,0 +1,173 @@
+main {
+    display: grid;
+    grid-template-areas: 
+        "nav"
+        "header"
+        "article"
+        "aside"
+        "footer";
+}
+
+.album_page {
+    display: none;
+}
+
+.artist_page {
+    display: none;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo > img {
+    padding: 10px;
+}
+
+.logo > h2 {
+    padding: 10px;
+}
+
+.logo_img{
+    border-radius: 100px;
+    width: 75px;
+}
+
+.nav {
+    background-color: lightgray;
+    height: 100px;
+    justify-content: space-between;
+} 
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding: 10px;
+}
+
+.menu > li {
+    list-style-type: none;
+}
+
+.menu a {
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: red;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header > div {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+/* .logo {
+    border-radius: 25px;
+    display: flex;
+    float: left;
+} */
+
+/* .menu {
+    display: flex;
+    float: left;
+} */
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto;
+ }
+
+ 
+ #grid-container > div {
+    text-align: center;
+    background: lightgreen;
+    border: 3px solid green;
+    padding: 20px;
+ }
+
+ nav {
+    grid-area: nav;
+    background-color: pink;
+ }
+
+ header {
+    grid-area: header;
+ }
+
+ article {
+    background-color: green;
+    grid-area: article;
+ }
+ 
+ aside {
+    background-color: red;
+    grid-area: aside;
+ }
+
+ footer {
+    background-color: yellow;
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ footer > div{
+    margin: 20px;
+ }
+
+ .socials > img{
+    width: 75px;
+ }
+
+ hr {
+    margin: 25px 50px;
+    height: 2px;
+    border: none;
+    background-color: black;
+ }
+
+ @media only screen and (min-width: 800px) {
+    main {
+        display: grid;
+        grid-template-areas: 
+            "nav nav nav"
+            "header header header"
+            "article article aside"
+            "footer footer footer";
+    }
+
+    #grid-container {
+        display: grid;
+        grid-template-columns: auto auto;
+     }
+}
