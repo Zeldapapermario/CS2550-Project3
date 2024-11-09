@@ -1,0 +1,48 @@
+/* This stylesheet is just for the Dark mode of the website. The only changes I make are changing the colors to their "dark mode" counterpart */
+body {
+    background-color: black;
+}
+
+.nav {
+    background-color: #490404;
+} 
+
+.menu a {
+    color: #bcd2eb;
+}
+
+.menu a:hover {
+    color: #2c2502;
+}
+
+h1, h2, h3 {
+    color: #bcd2eb;
+}
+
+figcaption {
+    color: #bcd2eb;;
+}
+
+p {
+    color: #bcd2eb;
+}
+
+#grid-container > div {
+    background: #613605;
+ }
+
+ aside {
+    background-color: #352403;
+ }
+
+ footer {
+    background-color: #490404;
+ }
+
+ hr {
+    background-color: white;
+ }
+
+ #cities {
+    background-color: #1c424f;
+ }

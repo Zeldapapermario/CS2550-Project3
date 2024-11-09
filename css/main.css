@@ -1,3 +1,5 @@
+/* I didn't get any feedback from Project 3 so I wasn't sure what to refactor/fix.  */
+
 main {
     display: grid;
     grid-template-areas: 
@@ -52,6 +54,7 @@ main {
 
 .menu {
     display: flex;
+    align-items: center;
 }
 
 .menu li {
@@ -115,28 +118,14 @@ iframe {
 }
 
 
-
-/* .logo {
-    border-radius: 25px;
-    display: flex;
-    float: left;
-} */
-
-/* .menu {
-    display: flex;
-    float: left;
-} */
-
 #grid-container {
     display: grid;
     grid-template-columns: auto;
  }
 
- 
  #grid-container > div {
     text-align: center;
     background: #FFD09B;
-/*     border: 3px solid green; */
     padding: 10px;
     margin: 10px;
     padding-top: 20px;
@@ -201,7 +190,6 @@ iframe {
      }
 }
 
-
  @media only screen and (min-width: 1300px) {
     main {
         display: grid;
@@ -218,3 +206,12 @@ iframe {
      }
 }
 
+#cities {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: center;
+    border-radius: 5px;
+    border: 3px dotted black;
+ }
