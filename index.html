@@ -1,8 +1,11 @@
+<!-- Added Toggleable Dark theme to website. The themes can be toggled by clicking on the moon/sun icon in the navigation bar -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <title></title>
-    <link rel="stylesheet" href="css/main.css"> 
+    <link rel="stylesheet" href="css/main.css" id="main_style"> 
+    <link rel="stylesheet" href="css/theme.css" id="night_style" disabled> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <main id="main1">
@@ -16,6 +19,7 @@
                     <li><a href="#"  onclick="showSection('home')">Home</a></li>
                     <li><a href="#" onclick="showSection('albums')">Albums</a></li>
                     <li><a href="#"  onclick="showSection('artists')">Artists</a></li>
+                    <li><input type="image" src="img/moon.png" onclick="nightMode()" width="50px" id="toggle_image"></input></li>
                 </ul>
             </div>
         </nav>
@@ -168,7 +172,7 @@
                 </div>
                 
                 <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/L93-7vRfxNs?si=dGjzNEmjyGxtzB5l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/3aIIIeDAECo?si=Tznl_yvQ6IkRmhYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </section>
             <section class="album_page">
