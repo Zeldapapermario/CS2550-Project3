@@ -1,3 +1,4 @@
+// Added nightMode function that toggles between light and dark mode
 
 // I know this is a super dumb and ineffecient way of showing/hiding the sections but at least it's working
 function showSection(sectionName) {
@@ -30,4 +31,17 @@ function showSection(sectionName) {
             artistContent[i].style.display = "inline";
         }
     }
+}
+
+function nightMode(){
+    var styleTheme = document.getElementById("night_style");
+    var toggleImage = document.getElementById("toggle_image");
+    if (styleTheme.hasAttribute("disabled") == true) {
+        styleTheme.removeAttribute("disabled");
+        toggleImage.src="img/sun_white.png"
+    } else {
+        styleTheme.setAttribute("disabled", "");
+        toggleImage.src="img/moon.png"
+    }
+
 }
